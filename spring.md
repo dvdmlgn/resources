@@ -2,6 +2,10 @@
 
 concerned with **Cross-Cutting Functions**; which are conceptually different to *Bussiness Logic*
 
+**DTO** *(Data Transfer Object)*
+
+**FI** *(Financially Impacting)*
+
 ___
 
 #### Using XML config files with Boot 
@@ -16,3 +20,65 @@ public class SpringConfiguration {
 }
 ```
 [source: stackOverflow](https://stackoverflow.com/a/31677776) 
+
+___
+
+#### RESTful web app/service with spring
+
+##### creating a resource controller
+
+In Spring’s approach to building RESTful web services, HTTP requests are handled by a controller. These components are easily identified by the `@RestController` annotation, and the `GreetingController` class below handles `GET` requests for the `/greeting` route by returning a new instance of the `Greeting` class:
+
+- **value** parameter refers to the **route**
+- **method** parameter refers to the **http request type**
+
+``` java
+@RestController
+public class GreetingController {
+	@RequestMapping(value = "/greeting", method = RequestMethod.GET)
+    public Greeting greeting(
+    	@RequestPara(value = "name", defaultValue = "there,..") String name
+ 	) {
+    	return new Greeting(name);
+    }
+}
+```
+
+The `@RequestMapping` annotation ensures that HTTP requests to `/greeting` are mapped to the `greeting()` method.
+
+`@RequestParam` binds the value of the query string parameter `name` into the `name` parameter of the `greeting()` method. If the `name` parameter is absent in the request, the `defaultValue` of "World" is used.
+
+with **Spring *(ver. 4.6.2)*** semantic annotations you could write the above as:
+
+``` java
+@GetMapping(value = "/greeting")
+public Greeting greeting(
+	@RequestParam(value = "name", defaultValue = "there,..") String name
+) {
+	return new Greeting(name);
+}
+```
+
+***Note***: the same is true for `PUT`, `POST`, and `DELETE` requests also
+
+A key difference between a traditional MVC controller and the RESTful web service controller above is the way that the HTTP response body is created. Rather than relying on a view technology to perform server-side rendering of the greeting data to HTML, this RESTful web service controller simply populates and returns a `Greeting` object. The object data will be written directly to the HTTP response as JSON.
+
+This code uses Spring 4’s new `@RestController` annotation, which marks the class as a controller where every method returns a domain object instead of a view. It’s shorthand for `@Controller` and `@ResponseBody` rolled together.
+
+The `Greeting` object must be converted to JSON. Thanks to Spring’s HTTP message converter support, you don’t need to do this conversion manually. Because Jackson 2 is on the classpath, Spring’s `MappingJackson2HttpMessageConverter` is automatically chosen to convert the `Greeting` instance to JSON.
+
+[source: spring.io](https://spring.io/guides/gs/rest-service/)
+
+
+
+---
+
+## later learning links
+
+[Atomic variables in Java](https://www.baeldung.com/java-atomic-variables)
+
+[post mapping with json](http://appsdeveloperblog.com/postmapping-requestbody-spring-mvc/)
+
+
+
+

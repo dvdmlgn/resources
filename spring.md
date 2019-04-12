@@ -118,3 +118,5 @@ final OkHttpClient client = new OkHttpClient();
 [server side rendering with React](https://medium.freecodecamp.org/demystifying-reacts-server-side-render-de335d408fe4h)
 
 [spring boot and postgreSQL](https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/)
+
+[spring service design pattern](https://www.tutorialspoint.com/spring_boot/spring_boot_service_components.htm)

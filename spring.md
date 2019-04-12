@@ -6,6 +6,8 @@ concerned with **Cross-Cutting Functions**; which are conceptually different to 
 
 **FI** *(Financially Impacting)*
 
+**DAO** *(Data Access Object)*
+
 ___
 
 #### Using XML config files with Boot 
@@ -70,6 +72,19 @@ The `Greeting` object must be converted to JSON. Thanks to Spring’s HTTP messa
 [source: spring.io](https://spring.io/guides/gs/rest-service/)
 
 
+---
+``` java
+Set<String> set = people.stream()
+                        .map(Person::getName)
+                        .collect(Collectors.toCollection(TreeSet::new));
+```
+
+This is **method reference**. *Added in Java 8.*
+
+`TreeSet::new` refers to the default constructor of `TreeSet`.
+
+In general `A::B` refers to method `B` in class `A`.
+
 
 ---
 
@@ -81,6 +96,4 @@ The `Greeting` object must be converted to JSON. Thanks to Spring’s HTTP messa
 
 [building executable jar files with spring and maven](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
 
-
-
-
+[server side rendering with React](https://medium.freecodecamp.org/demystifying-reacts-server-side-render-de335d408fe4)

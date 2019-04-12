@@ -8,6 +8,8 @@ concerned with **Cross-Cutting Functions**; which are conceptually different to 
 
 **DAO** *(Data Access Object)*
 
+**JPA** *(Java Persistence API)*
+
 ___
 
 #### Using XML config files with Boot 
@@ -114,3 +116,5 @@ final OkHttpClient client = new OkHttpClient();
 [building executable jar files with spring and maven](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
 
 [server side rendering with React](https://medium.freecodecamp.org/demystifying-reacts-server-side-render-de335d408fe4h)
+
+[spring boot and postgreSQL](https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/)

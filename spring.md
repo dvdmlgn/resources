@@ -85,6 +85,23 @@ This is **method reference**. *Added in Java 8.*
 
 In general `A::B` refers to method `B` in class `A`.
 
+---
+#### make http request less painful on java with okhttp
+``` java
+final OkHttpClient client = new OkHttpClient();
+
+    final Request request = new Request.Builder()
+        .url("https://api.spotify.com/v1/browse/categories?country=IE&locale=en_IE&limit=10&offset=0")
+        .get()
+        .addHeader("Accept", "application/json")
+        .addHeader("Content-Type", "application/json")
+        .addHeader("Authorization", "Bearer tokenString")
+        .build();
+
+    final Response response = client.newCall(request).execute();
+
+    return response.body().string();
+```
 
 ---
 
@@ -96,4 +113,4 @@ In general `A::B` refers to method `B` in class `A`.
 
 [building executable jar files with spring and maven](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
 
-[server side rendering with React](https://medium.freecodecamp.org/demystifying-reacts-server-side-render-de335d408fe4)
+[server side rendering with React](https://medium.freecodecamp.org/demystifying-reacts-server-side-render-de335d408fe4h)

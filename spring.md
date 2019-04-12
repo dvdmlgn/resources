@@ -79,6 +79,8 @@ The `Greeting` object must be converted to JSON. Thanks to Spring’s HTTP messa
 
 [post mapping with json](http://appsdeveloperblog.com/postmapping-requestbody-spring-mvc/)
 
+[building executable jar files with spring and maven](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
+
 
 
 

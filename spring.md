@@ -124,3 +124,5 @@ final OkHttpClient client = new OkHttpClient();
 [spring websockets](https://www.baeldung.com/websockets-spring)
 
 [javadoc](https://www.baeldung.com/javadoc)
+
+[bash cheatsheet](https://devhints.io/bash)

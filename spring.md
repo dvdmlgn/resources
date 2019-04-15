@@ -122,3 +122,5 @@ final OkHttpClient client = new OkHttpClient();
 [spring service design pattern](https://www.tutorialspoint.com/spring_boot/spring_boot_service_components.htm)
 
 [spring websockets](https://www.baeldung.com/websockets-spring)
+
+[javadoc](https://www.baeldung.com/javadoc)

@@ -10,6 +10,10 @@ concerned with **Cross-Cutting Functions**; which are conceptually different to 
 
 **JPA** *(Java Persistence API)*
 
+**Domain Model**
+
+a domain model is a conceptual model of the domain that incorporates both behavior and data
+
 ___
 
 #### Using XML config files with Boot 

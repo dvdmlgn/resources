@@ -126,3 +126,5 @@ final OkHttpClient client = new OkHttpClient();
 [javadoc](https://www.baeldung.com/javadoc)
 
 [bash cheatsheet](https://devhints.io/bash)
+
+[spring jpa](https://spring.io/guides/gs/accessing-data-jpa/)

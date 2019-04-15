@@ -128,3 +128,5 @@ final OkHttpClient client = new OkHttpClient();
 [bash cheatsheet](https://devhints.io/bash)
 
 [spring jpa](https://spring.io/guides/gs/accessing-data-jpa/)
+
+[spring jpa with hiberante & postgresql](https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/)

@@ -134,3 +134,5 @@ final OkHttpClient client = new OkHttpClient();
 [spring jpa](https://spring.io/guides/gs/accessing-data-jpa/)
 
 [spring jpa with hiberante & postgresql](https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/)
+
+[spring web client](https://www.baeldung.com/spring-5-webclient)

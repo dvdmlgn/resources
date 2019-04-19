@@ -110,6 +110,20 @@ final OkHttpClient client = new OkHttpClient();
 ```
 
 ---
+### miscella
+
+``` sh
+. ~/.bashrc
+```
+
+run this for bash to register any new aliases
+
+``` sh
+*/5 * * * * /home/ramesh/backup.sh
+```
+this cron task will run every 5 minutes
+
+---
 
 ## later learning links
 

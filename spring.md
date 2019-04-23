@@ -125,6 +125,18 @@ this cron task will run every 5 minutes
 
 ---
 
+## Docker
+
+#### difference between some docker commands
+
+`Create` adds a writeable container on top of your image and sets it up for running whatever command you specified in your `CMD`. The container ID is reported back but it’s not started.
+
+`Start` will start any stopped containers. This includes freshly created containers.
+
+`Run` is a combination of create and start. It creates the container and starts it.
+
+---
+
 ## later learning links
 
 [Atomic variables in Java](https://www.baeldung.com/java-atomic-variables)
